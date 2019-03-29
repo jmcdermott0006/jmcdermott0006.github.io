@@ -10,7 +10,7 @@ html, body {
 
 body {
 
-  padding: 0;
+  padding: 14px;
 
   margin: 0;
 
@@ -50,7 +50,7 @@ table {
 
   left: 1em;
 
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.3);
 
 }
 
