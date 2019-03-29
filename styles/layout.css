@@ -10,9 +10,11 @@ html, body {
 
 body {
 
-  padding: 32px;
+  padding: 14px;
 
-  margin: 32px;
+  margin: 0;
+
+  background: "images/serious.jpg";
 
   background-position: left;
 
@@ -25,6 +27,10 @@ body {
  
 
 h1 {
+
+  font:"Cinzel";
+  
+  color:"#e6e6e6";
 
   font-size: 42pt;
 
@@ -45,6 +51,8 @@ h1 {
 table {
 
   position: absolute;
+
+  width: 300;
 
   bottom: 1em;
 
