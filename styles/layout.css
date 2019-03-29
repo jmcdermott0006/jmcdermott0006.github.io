@@ -14,7 +14,7 @@ body {
 
   margin: 0;
 
-  background: "images/serious.jpg";
+  background: images/serious.jpg;
 
   background-position: left;
 
@@ -28,9 +28,9 @@ body {
 
 h1 {
 
-  font:"Cinzel";
+  font:Cinzel;
   
-  color:"#e6e6e6";
+  color:#e6e6e6;
 
   font-size: 42pt;
 
