@@ -14,7 +14,7 @@ body {
 
   margin: 0;
 
-  background: images/serious.jpg;
+  background: images/serious;
 
   background-position: left;
 
@@ -52,7 +52,7 @@ table {
 
   position: absolute;
 
-  width: 300;
+  width: 300px;
 
   bottom: 1em;
 
