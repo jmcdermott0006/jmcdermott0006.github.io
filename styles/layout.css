@@ -51,8 +51,9 @@ h1 {
 table {
 
   position: absolute;
+  color:#e6e6e6;
 
-  width: 300px;
+  width: 600px;
 
   bottom: 1em;
 
