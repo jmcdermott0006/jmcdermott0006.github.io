@@ -1,132 +1,221 @@
-
 <!doctype html>
-
 <html lang="en">
+  <head>
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" sizes="16x16 32x32 48x48 64x64 110X110 114x114" type="image/vnd.microsoft.icon">
+
+    <!-- Starter template taken from getbootstrap.com with Material Design elements from -->
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Behold!  All OF THE STYLE!  CSS Stuff Below: ///////////// -->
+    <!-- Font Selections -->
+    <link href="https://fonts.googleapis.com/css?family=Cabin:400, 600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Material Design Lite CSS -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue_grey-amber.min.css">
+    <!-- My CSS Sheet -->
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+
+
+    <title>SKYCTC Game Club</title>
+  </head>
+  <body>
+
+    <!-- Top navbar with logo (way too complicated to do) -->
+    <!-- Wow, I really hate working with navbars.  Like... why?? -->
+    <nav class="navbar navbar-light bg-light navbar-expand-md fixed-top">
+      <div class="container-fluid">
+        <a id="brandName" class="navbar-brand" href="index.html">
+          <!--<img src="images/logoicon.png" width="60" height="60" class="d-inline-block align-top" alt="SKYCTC Game Club Logo">-->
+          <img src="images/logofull.png" height="70" class="d-inline-block align-top" alt="SKYCTC Game Club Logo">
+          <!-- SKYCTC GAME CLUB -->
+        </a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="navcol-1" class="collapse navbar-collapse text-left">
+          <ul id="navitabs1" class="nav navbar-nav text-left ml-auto">
+            <li class="nav-item" role="presentation">
+              <a class="nav-link active" href="index.html">Home | </a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" href="calendar.html">Meeting Schedule | </a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" href="resources.html">Resources | </a>
+            </li>
+          </ul>
+          <a href="signup.html" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+            Sign Up
+          </a>
+        </div>
+      </div>
+    </nav>
+
+
+    <div id="top1">
+      <!-- Jumbotron with call to action for sign up -->
+      <div id="welcome" class="container">
+        <div id="signUpJumbo" class="jumbotron">
+          <h1 id="punchyheading">Welcome to the Club!</h1>
+          <hr>
+          <p id="welcomepar">
+            We are a group of nerdy people who are passionate about the gaming hobby 
+            in its many forms: from trading cards to digital gaming, table-top roleplaying, and beyond!  
+            All are welcome at our table, regardless of race, religion, or gender, and we love to teach new 
+            people how to play our favorite games.  Click the button below to sign up for a weekly email 
+            reminder with all the important info!
+          </p>
+          <p><a class="btn btn-primary btn-lg" href="signup.html" role="button">Join the Email List</a></p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Row with alternate navigation route to calendar and info -->
+    <div class="container">
+      <div id="inforow" class="row">
+        <div id="infoimage1" class="col-5">
+          <h2 id="imagetext">Room G108 Every Thursday at 3:30 PM</h2>
+        </div>
+        <div id="infobox1" class="col-7">
+          <h2 id="markerheading">Meeting Schedule</h2>
+          <hr>
+          <p>
+            Typical meetings happen every Thursday that school is in session, starting at 3:30 PM CST 
+            in room G108 on the SKYCTC Main Campus.  Meetings are usually 2 to 3 hours long.  Want to 
+            know what we're doing this Thursday?  Click below to find out more!  And in the words of 
+            Matthew Mercer, "is it Thursday yet?"
+          </p>
+          <p> 
+            <a href="calendar.html" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">Check the Schedule</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
 
-    <head>
-
-        <!-- 1) Set the title to your adjective -->
-
-        <title>Serious</title>
-
-        <meta charset="UTF-8">
-
-        <!-- 2) We need to tell the browser to load the font. Use fonts.google.com to select a font and change this line as necessary -->
-
-        <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
-
- 
-
-        <!-- 3) Here we link the CSS file I (the instructor) wrote to help out. It adjusts the size of the h1, positions the table in the bottom left, positions the h1 in the top left, positions the background image along the center left and stretches to cover the page, puts a semi-transparent background on the table, adds the borders between the rows on the table, and picks a better default font for the td's. Don't change this line or the CSS unless you want to clean up those things yourself -->
-
-        <link href="styles/layout.css" rel="stylesheet">
-
-    </head>
-
- 
-
-    <!-- 4) Here we set the background image for the body -->
-
-    <body>
-
- 
-
-        <!-- 5) Here we set our h1, the font to use, and the color -->
-
-        <h1>
-
-            Serious
-
-        </h1>
-
- 
-
-        <!-- 6) Finally, here we have our table, specify how wide to make it, and list our definitions -->
-
-        <table>
-
-            <tr>
-
-                <th>
-
-                    Definitions
-
-                </th>
-
-            </tr>
-
-            <tr>
-
-                <td>
-
-                    of, showing, or characterized by deep thought.
-
-                </td>
-
-            </tr>
-
-            <tr>
-
-                <td>
-
-                    of grave or somber disposition, character, or manner: <i>a serious occasion; a serious man.</i>
-
-                </td>
-
-            </tr>
-
-            <tr>
-
-                <td>
-
-                    being in earnest; sincere; not trifling: <i>His interest was serious.</i>
-
-                </td>
-
-            </tr>
-
-            <tr>
-
-                <td>
-
-                    requiring thought, concentration, or application: <i>serious reading; a serious task.</i>
-
-                </td>
-
-            </tr>
-
-            <tr>
-
-                <td>
-
-                    weighty or important: <i>a serious book; Marriage is a serious matter.</i>
-
-                </td>
-
-            </tr>
-
-            <tr>
-
-                <td>
-
-                    giving cause for apprehension; critical: <i>The plan has one serious flaw.</i>
-
-                </td>
-
-            </tr>
-
-            <tr>
-
-                <td>
-
-                    Medicine/Medical. (of a patient's condition) having unstable or otherwise abnormal vital signs and other unfavorable indicators, as loss of appetite and poor mobility: <i>patient is acutely ill.</i>
-
-                </td>
-
-            </tr>
-
-        </table>
-
-    </body>
-
+    <div class="container">
+      <div id="inforow" class="row">
+
+
+        <!-- Alternate navigation route to resources -->
+        <div id="infobox2" class="col-4">
+          <h2 id="markerheading">Resources</h2>
+          <hr>
+          <p>
+            Need rules?  What about books?  Help building your next deck?  From character 
+            sheets to game cheats, we got you covered and then some!
+          </p>
+          <p>
+            <a href="resources.html" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">
+              Sheets, Guides, and More
+            </a>
+          </p>
+          <div>
+            <a href="resources.html">
+              <img id="thumbimg" src="images/nerd3.png" alt="photo by Jon McDermott">
+            </a>
+          </div>
+        </div>
+
+
+        <!-- External Site Thumbnail -->
+        <div class="col-4">
+          <div class="thumbnail">
+            <!-- Art by Tyler Jacobson, whose illustrations can be found at tylerjacobsonart.com -->
+            <a href="http://dnd.wizards.com/dungeons-and-dragons/what-is-dd/races" target="_blank">
+              <img id="thumbimg" src="images/volosguide.png" alt="Cover Art for Volo's Guide to Monsters by Wizards of the Coast, Illustrated by Tyler Jacobson">
+            </a>
+            <div class="caption">
+              <h3>Start Building Your First D&D Character</h3>
+              <p>
+                  Want to join our next game of Dungeon's and Dragons, but don't have a character 
+                  yet?  Start by taking a look at this wonderful walk through to making your very 
+                  first character.  Art by Tyler Jacobson for the cover of Volo's Guide to Monsters.
+              </p>
+              <p>
+                <a href="http://dnd.wizards.com/dungeons-and-dragons/what-is-dd/races" target="_blank" class="btn btn-primary" role="button">Get Started</a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Section with "next event" and link out to event page.  Should be updated regularly -->
+        <div id="infobox3" class="col-4">
+          <h2 id="markerheading">Next Event</h2>
+          <hr>
+          <p>
+            Join us on March 9th for our <strong>Finals Week Banquet</strong> and try our favorite 
+            dishes and games!  Celebrate the end of a long semester with a classic game night potluck.
+          </p>
+          <p>
+            <a href="events.html" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+              Learn More
+            </a>
+            <a href="calendar.html" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">
+              All Events
+            </a>
+          </p>
+          <div>
+            <a href="calendar.html">
+              <img id="thumbimg" src="images/group1.png" alt="photo by Jon McDermott">
+            </a>
+          </div>
+        </div>
+
+      <!-- End of row -->
+      </div>
+    </div>
+
+
+
+
+
+
+
+    <!-- Footer -->
+    <footer id="footerstyle">
+      <div class="container">
+        <div class="row">
+          <div class="col-3">
+          </div>
+          <div class="col-6">
+            <ul class="list-inline text-center">
+              <li class="list-inline-item"><a href="about.html">About</a></li>
+              <li class="list-inline-item"><a href="contact.html">Contact Us</a></li>
+              <li class="list-inline-item"><a href="https://southcentral.kctcs.edu/">SKYCTC</a></li>
+            </ul>
+            <p class="copyright text-muted text-center">Copyright © SKYCTC Game Club 2019 | Web Design by Jon McDermott</p>
+          </div>
+          <div class="col-3">
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+    <!-- Material Design Lite JavaScript -->
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+
+
+
+  </body>
 </html>
