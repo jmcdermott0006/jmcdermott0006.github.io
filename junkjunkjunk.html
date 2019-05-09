@@ -47,63 +47,88 @@
               <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item" role="presentation">
-              <a class="nav-link active" href="calendar.html">Meeting Schedule</a>
+              <a class="nav-link" href="calendar.html">Meeting Schedule</a>
             </li>
             <li class="nav-item" role="presentation">
               <a class="nav-link" href="resources.html">Resources</a>
             </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link active" href="signup.html">Sign Up</a>
+            </li>
           </ul>
-          <a href="signup.html" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
-            Sign Up
-          </a>
         </div>
       </div>
     </nav>
 
 
-    <div id="top2">
-      <div id="topbar2" class="row">
-        <div class="col-lg-8 col-md-12">
-          <div class="aspect-ratio">
-              <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=mpaeqmevv8qq78s3495s0c649g%40group.calendar.google.com&amp;color=%2342104A&amp;ctz=America%2FChicago"></iframe>
-          </div> 
+
+
+    <div id="top3" class="container">
+        <div id="topbar1" class="row">
+            <div class="col-lg-12 col-xs-0">
+                This should only show up on large screens.  LARGE STUFF
+            </div>
         </div>
-        <div class="col-lg-4 col-md-12">
-          <div id="infobox5">
-            <h2 id="markerheading">Highlighted Events:</h2>
-            <hr>
-            <h3>Final Battle - Tomb of Annihilation</h3>
-            <h5>May 2nd</h5>
-            <p>
-              The epic conclusion of this semester's long running Dungeons and Dragons 
-              5th Edition game.  Don't miss this meeting as we uncover the truth about 
-              the deadly "Soul Mongerer!"  Meeting starts at 3:30PM, Thursday, May 2nd in 
-              our normal meeting location, Building G, Room 108.
-            </p>
-            <p>
-              <a href="events.html" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
-                Learn More
-              </a>
-            </p>
-            <hr>
-            <h3>End of Semester Banquet</h3>
-            <h5>May 9th</h5>
-            <p>
-              Bring your favorite dish and game to this potluck event for the end of the semester!  
-              For more information, contact Jon at jmcdermott0006@kctcs.edu, or Ashley at notarealemail@fakeemail.com.
-            </p>
-            <p>
-              <a href="events.html" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
-                Learn More
-              </a>
-            </p>
-            <hr>   
-          </div>
-        </div>
-      </div>
     </div>
 
-    <div>
+    <div id="top3" class="container-fluid">
+        <div id="topbar1" class="row">
+            <div class="col-lg-0 col-xs-12">
+                This is for small screens less than large.  SMOL
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <div id="top3">
+      <div id="topbar1" class="row">
+        <div class="col-lg-1 col-xs-0"></div>
+          <div id="signupform" class="col-lg-4 col-md-5 col-xs-12">
+            <h3 id="markerheading">Why Sign Up?</h3>
+            <hr>
+            <p>
+              By signing up with you name and email, you can recieve weekly email notifications about 
+              the SKYCTC Game Club including meeting times and location, reminders for upcoming 
+              events, opportunities to vote on future activites, and more!  We promise not to send more 
+              than 2 emails in any given week, and if you ever want to unsubscribe, all you have to do is 
+              reply "Stop" to any email from us!  We look forward to seeing you at the next meeting!
+            </p>
+          </div>
+        <div class="col-md-2 col-xs-0"></div>
+          <div id="signupform" class="col-lg-4 col-md-5 col-xs-12">
+            <!-- Sign Up Form Section -->
+            <!-- First Name Form Entry -->
+            <form action="#">
+              <div class="mdl-textfield mdl-js-textfield">
+                <input class="mdl-textfield__input" type="text" id="fname">
+                <label class="mdl-textfield__label" for="fname">First Name</label>
+              </div>
+            </form>
+            <!-- Last Name Form Entry -->
+            <form action="#">
+              <div class="mdl-textfield mdl-js-textfield">
+                <input class="mdl-textfield__input" type="text" id="lname">
+                <label class="mdl-textfield__label" for="lname">Last Name</label>
+              </div>
+            </form>
+            <!-- Email Form Entry -->
+            <form action="#">
+              <div class="mdl-textfield mdl-js-textfield">
+                <input class="mdl-textfield__input" type="text" id="email">
+                <label class="mdl-textfield__label" for="email">Email</label>
+              </div>
+            </form>
+            <!-- Button for Sign Up-->
+            <a href="signupconf.html" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+              Sign Up
+            </a>
+          </div>
+        <div class="col-lg-1 col-xs-0"></div>
+      </div>
     </div>
     
 
