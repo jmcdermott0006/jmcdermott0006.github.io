@@ -26,6 +26,8 @@
 
 
 <script type="text/x-handlebars-template" id="tableTemplate">
+    <!--this is our template for the Student By Major table-->
+    <!--it should output 4 columns and populate those with the fields from the student objects in the JSON file-->
     <table class="table table-striped">
         <tr><th>Name</th><th>Major</th><th>Midterm</th><th>Final</th></tr>
         {{#each rowOfStudent}}
@@ -38,8 +40,8 @@
 
   
 <script>
-
-    function getData(selected_major) {
+    //this is our 
+    function getData(selected_major) {  //will accept either CIT or BUS from button click
         var request = new XMLHttpRequest();
         request.open('GET', 'cit5students.json');
  
