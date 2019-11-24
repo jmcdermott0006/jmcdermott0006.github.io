@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <meta charset="UTF-8"> 
+        <title>Students By Major</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.2/handlebars.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    </head>
+
+<body>
+    <div class="container">
+        <h2>Select a Major</h2>
+        <div> 
+            <button type='button' class="btn btn-primary" onClick="getData('cit')">CIT Majors</button> 
+            <button type='button' class="btn btn-primary" onClick="getData('business')">Business Majors</button>  
+        </div>
+  
+        <h3>We filter our dataset by major</h3>
+
+        <div id="studentTable"></div> 
+    </div> 
+
+</body>
+
+
+<script type="text/x-handlebars-template" id="tableTemplate">
+    <table class="table table-striped">
+        <tr><th>Name</th><th>Major</th><th>Midterm</th><th>Final</th></tr>
+        {{#each rowOfStudent}}
+            <tr>
+                <td>{{name}}</td><td>{{major}}</td><td>{{midterm}}</td><td>{{final}}</td>
+            </tr>
+        {{/each}}
+    </table>
+</script>
+
+  
+<script>
+
+    function getData(selected_student) {
+        var request = new XMLHttpRequest();
+        request.open('GET', 'cit5students.json');
+ 
+        request.onload = function() {
+            var data = JSON.parse(request.responseText);
+
+            student_data = data.filter(getStudent)
+            function getStudent(item) {
+                return item.student == selected_student;
+            }
+        
+            if (request.status == 200) {
+                var templateText = document.getElementById('tableTemplate').innerHTML;
+                var compiledTemplateText = Handlebars.compile(templateText);       
+                compiledHtml = compiledTemplateText({ rowOfStudent: student_data })          
+                document.getElementById('studentTable').innerHTML = compiledHtml; 
+            }
+            else {
+                document.querySelector('#studentTable').innerHTML = "There was an error loading the student data.";
+            }
+        }
+     
+        request.send(null);
+    }
+</script>
+
+</html>
