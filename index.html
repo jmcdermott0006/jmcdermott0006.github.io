@@ -40,7 +40,7 @@
 
   
 <script>
-    //this is our 
+    //this is our ajax request
     function getData(selected_major) {  //will accept either CIT or BUS from button click
         var request = new XMLHttpRequest();
         request.open('GET', 'cit5students.json');
@@ -50,10 +50,10 @@
 
             student_data = data.filter(getStudent)
             function getStudent(item) {
-                return item.major == selected_major;
+                return item.major == selected_major;  //filter by major, return only selected type
             }
         
-            if (request.status == 200) {
+            if (request.status == 200) {  //error checking
                 var templateText = document.getElementById('tableTemplate').innerHTML;
                 var compiledTemplateText = Handlebars.compile(templateText);       
                 compiledHtml = compiledTemplateText({ rowOfStudent: student_data })          
