@@ -68,7 +68,7 @@
             //get the student data from the JSON file and put in in the students table.
             var app = angular.module('adviseeApp', []);
             app.controller('advCtl', function($scope, $http) {
-                $http.get(students.json).then(function (response) {
+                $http.get("students.json").then(function (response) {
                     $scope.students = response.data;
                 });
             });
